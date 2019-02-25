@@ -1,0 +1,106 @@
+.entrance-page {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(243, 243, 243);
+  font-family: 'Roboto-Light';
+}
+
+.flex-for-div {
+  display: flex;
+}
+
+.discribin-text,
+.form {
+  width: 50%;
+}
+
+.discribin-text h1,
+.discribin-text p {
+  font-size: 40px;
+  color: white;
+}
+
+.discribin-text p {
+  font-size: 28px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.493);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.25);
+  color: white;
+  height: 70%;
+  width: 60%;
+}
+
+.data-user input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: white;
+  outline: none;
+  font-size: 18px;
+}
+
+.data-user p {
+  font-size: 13px;
+  padding-top: 7px;
+  margin: 0;
+}
+
+.data-user .btn-todo {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 1025px) {
+  .entrance-page {
+    display: block;
+    background: none;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .discribin-text,
+  .form {
+    width: 100%;
+  }
+
+  .discribin-text {
+    margin-bottom: 80px;
+    padding-left: 20px;
+  }
+
+  .data-user {
+    height: 200px;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .discribin-text {
+    margin-bottom: 40px;
+    padding-left: 7px;
+  }
+
+  .discribin-text h1 {
+    font-size: 40px;
+  }
+
+  .discribin-text p {
+    font-size: 26px;
+  }
+}

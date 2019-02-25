@@ -1,0 +1,43 @@
+.modal {
+  font-family: 'Roboto-Light';
+}
+
+.task .button-edit {
+  height: 20px;
+  width: 20px;
+}
+
+textarea {
+  width: 100%;
+  outline: none;
+  color: #4a4f53;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid rgb(138, 138, 138);
+  overflow: hidden;
+  font-size: large;
+}
+
+.btn-cancel,
+.btn-save {
+  padding: 5px 7px;
+  border: none;
+  outline: none !important;
+  background-color: #5a6268;
+  color: white;
+  font-family: 'Roboto-Regular';
+  transition: .3s;
+  box-shadow: 0 5px 8px -2px #777;
+}
+
+.btn-cancel:hover {
+  background-color: #515355;
+}
+
+.btn-save {
+  background-color: #040d92;
+}
+
+.btn-save:hover {
+  background-color: #040c79;
+}

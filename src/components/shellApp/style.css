@@ -1,0 +1,36 @@
+.wrapper-sections {
+  font-family: 'Roboto-Light';
+}
+
+.greeting {
+  padding-top: 50px;
+  font-weight: bold;
+}
+
+.block-content {
+  background-color: #fff;
+}
+
+.block-content .container {
+  position: relative;
+}
+
+.block-content .container::before,
+.block-content .container::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  width: 40%;
+  top: 80%;
+  background: #777;
+  box-shadow: 0 15px 10px #777;
+  transform: rotate(-2deg);
+}
+
+.block-content .container::after {
+  right: 20px;
+  left: auto;
+  transform: rotate(2deg);
+}

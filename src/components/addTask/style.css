@@ -1,0 +1,14 @@
+.input-addTask {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-addTask input {
+  width: 80%;
+  padding-left: 15px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid#cacac9;
+  outline: none;
+}
