@@ -1,0 +1,26 @@
+
+.create-new-task .btn-create-task {
+    background-color: rgb(53, 93, 182);
+    border: none;
+    border-radius: 0;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.modal-content .modal-body .text-center button {
+    border-radius: 0;
+    background-color: rgb(53, 94, 182);
+    color: rgb(255, 255, 255);
+}
+
+.modal-content .modal-body .react-datepicker-wrapper {
+    margin: 0 0 8px 40px;
+    width: calc(100% - 40px);
+}
+
+.modal-content .modal-body .react-datepicker-wrapper input {
+    color: rgb(73, 80, 87);
+    padding-bottom: 6.4px;
+    padding-top: 9.6px;
+    width: 100%;
+}

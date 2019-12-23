@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './style.css';
 import EditTask from '../editTask/EditTask';
+import { MDBBtn } from "mdbreact";
 
 class RenderOneTask extends Component {
   state = {
@@ -46,11 +47,18 @@ class RenderOneTask extends Component {
 
         <EditTask onSubmit={this.props.editTask}/>
 
-        <button
+        {/* <button
           className="btn-belete"
           onClick={this.props.deleteTask}>
           Delete
-        </button>
+        </button> */}
+
+        <MDBBtn 
+          color
+          className="btn-belete"
+          onClick={this.props.deleteTask}>
+          Delete
+        </MDBBtn>
       </div>
     );
   }

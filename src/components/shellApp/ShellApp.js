@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './style.css';
 import RenderTaks from '../renderTasks/RenderTasks';
+import CreateTask from '../componentsGRUD/createTask/CreateTask';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -39,6 +40,11 @@ class ShellApp extends Component {
             <p>Be successful! To arrange your tasks.</p>
           </div>
         </SectionFon>
+        
+        <section className="create-new-task">
+          <CreateTask />
+        </section>
+
         <section className="block-content mb-5">
           <div className="container">
             <RenderTaks />
