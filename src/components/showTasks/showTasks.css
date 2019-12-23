@@ -1,0 +1,5 @@
+.dataTables_wrapper .row .dataTables_paginate,
+.dataTables_wrapper .row .dataTables_filter {
+    display: flex;
+    justify-content: flex-end;
+}
