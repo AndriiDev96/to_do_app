@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './style.css';
 /* import RenderTaks from '../renderTasks/RenderTasks'; */
-import CreateTask from '../componentsGRUD/createTask/CreateTask';
-import RenderTasks from '../showTasks/ShowTasks';
+import CreateTask from '../Components_GRUD/createTask/CreateTask';
+import RenderTasks from '../ShowTasks/ShowTasks.jsx';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 

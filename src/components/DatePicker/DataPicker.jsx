@@ -12,7 +12,7 @@ class DatePicker extends Component {
       <BDatePicker
         showPopperArrow={false}
         selected={this.props.finishDate || CURRENT_DAY}
-        dateFormat = "dd/MM/yyyy"
+        dateFormat = "MM/dd/yyyy"
         onChange={this.props.getDate}
       />
     );

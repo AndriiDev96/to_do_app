@@ -1,6 +1,7 @@
 import React from 'react';
 import { MDBDataTable } from 'mdbreact';
 import './showTasks.css';
+import { api } from '../../REST';
 
 const data = {
   columns: [
@@ -60,8 +61,22 @@ const data = {
   ]
 }
 
-const ShowTasks = () => {
 
+
+const getTaksAsync = async () => {
+  try {
+    
+    const data = await api.getAllTaks();
+    
+    return data;
+  } catch (error) {
+    console.log(error.message);
+  }
+}
+
+const ShowTasks = () => {
+  console.log(getTaksAsync());
+  
   return (
       <MDBDataTable
         striped
@@ -70,6 +85,6 @@ const ShowTasks = () => {
         data={data}
       />
   );
-} 
+}  
 
 export default ShowTasks;
