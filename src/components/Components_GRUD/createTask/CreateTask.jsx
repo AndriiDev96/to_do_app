@@ -11,10 +11,11 @@ import {
 import DatePicker from "../../DatePicker/DataPicker.jsx";
 import "./createTask.css";
 import { api } from '../../../REST';
+import moment from 'moment';
 
 class CreateTask extends Component {
   state = {
-    modal: true,
+    modal: false,
     disableSaveBtn: false,
     fieldName: "",
     fieldType: "",
@@ -54,17 +55,17 @@ class CreateTask extends Component {
   createTaskAsync = async event => {
     try {
       event.preventDefault();
+      const dateToday = moment().toDate();
       const data = {
         fieldName: this.state.fieldName,
         fieldType: this.state.fieldType,
+        currentDay: dateToday,
         filedFinishDate: this.state.filedFinishDate
       }
 
       const task  = await api.createTask(data);
 
-      console.log(task);
-      
-
+      this.stateModalWindow();
     } catch (error) {
       console.log(error.message);
     }

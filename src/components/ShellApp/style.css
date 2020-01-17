@@ -1,0 +1,22 @@
+.wrapper {
+  height: 100vh;
+  widows: 100%;
+}
+
+.wrapper main {
+  display: flex;
+  height: calc(100% - 195px);
+}
+
+.wrapper main .side-appication header {
+  display: flex;
+}
+
+.wrapper main .side-bar {
+  width: 30%;
+  background-color: #ccc;
+}
+
+.wrapper main .side-appication {
+  width: 70%;
+}

@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import './style.css';
 /* import RenderTaks from '../renderTasks/RenderTasks'; */
 import CreateTask from '../Components_GRUD/createTask/CreateTask';
-import RenderTasks from '../ShowTasks/ShowTasks.jsx';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 const SectionFon = styled.section`
   height: 180px;
@@ -24,34 +22,60 @@ const Button = styled.button`
 `;
 
 class ShellApp extends Component {
+
+  state = {
+
+  }
+
   render() {
     const nameLocalSt = localStorage.getItem('name');
     const nameUser = nameLocalSt === ' ' || nameLocalSt === null ? "User" : nameLocalSt;
 
     return (
-      <div className="wrapper-sections">
+      <section className="wrapper">
+
         <SectionFon>
-          <Link to="/">
+          {/* <Link to="/">
             <Button>
               <img src={process.env.PUBLIC_URL + '/img/img_button/left-arrow.png'} alt="back"/>
             </Button>
-          </Link>
+          </Link> */}
           <div className="container">
             <h2 className="greeting">Hello {nameUser}!</h2>
             <p>Be successful! To arrange your tasks.</p>
           </div>
         </SectionFon>
         
-        <section className="create-new-task">
-          <CreateTask />
-        </section>
+        <main className="container">
+          
+          <section className="menu side-bar">
+            <div>Test text 1</div>
+            <div>Test text 2</div>
+            <div>Test text 3</div>
+            <div>Test text 4</div>
+            <div>Test text 5</div>
+          </section>
 
-        <section className="block-content">
-          <div className="container">
-            <RenderTasks />
-          </div>
-        </section>
-      </div>
+          <section className="side-appication">
+            <header>
+              <div className="top-block">
+                <h3>Scheduler</h3>
+              </div>
+
+              <div className="top-block">
+                <CreateTask />
+              </div>
+            </header>
+
+            <div className="workspace">
+              <div className="section-with-tasks">
+                
+              </div>
+            </div>
+          </section>
+        
+        </main>
+      </section>
     );
   }
 }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import './style.css';
-import { Link } from "react-router-dom";
 
 const Button = styled.button`
   display: block;
